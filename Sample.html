@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background:#f2f2f2;
+    }
+
+    .container{
+      width: 500px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+    }
+
+    h2{
+      text-align: center;
+      color: darkblue;
+    }
+
+    label{
+      font-weight: bold;
+    }
+
+    input, select, textarea{
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+
+    .gender,
+    .hobby{
+      width: auto;
+    }
+
+    .btn{
+      background: darkblue;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover{
+      background: green;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2>Registration Form</h2>
+
+  <form>
+
+    <!-- Text -->
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your name">
+
+    <!-- Email -->
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email">
+
+    <!-- Password -->
+    <label>Password</label>
+    <input type="password" placeholder="Enter password">
+
+    <!-- Number -->
+    <label>Mobile Number</label>
+    <input type="number" placeholder="Enter mobile number">
+
+    <!-- Date -->
+    <label>Date of Birth</label>
+    <input type="date">
+
+    <!-- Time -->
+    <label>Time</label>
+    <input type="time">
+
+    <!-- Datetime -->
+    <label>Date and Time</label>
+    <input type="datetime-local">
+
+    <!-- Month -->
+    <label>Month</label>
+    <input type="month">
+
+    <!-- Week -->
+    <label>Week</label>
+    <input type="week">
+
+    <!-- Color -->
+    <label>Favorite Color</label>
+    <input type="color">
+
+    <!-- Range -->
+    <label>Skill Level</label>
+    <input type="range" min="0" max="100">
+
+    <!-- Search -->
+    <label>Search</label>
+    <input type="search" placeholder="Search here">
+
+    <!-- URL -->
+    <label>Website</label>
+    <input type="url" placeholder="Enter website URL">
+
+    <!-- Tel -->
+    <label>Telephone</label>
+    <input type="tel" placeholder="Enter telephone number">
+
+    <!-- File -->
+    <label>Upload File</label>
+    <input type="file">
+
+    <!-- Hidden -->
+    <input type="hidden" value="hiddenValue">
+
+    <!-- Radio -->
+    <label>Gender</label><br>
+
+    <input type="radio" name="gender" class="gender"> Male
+    <input type="radio" name="gender" class="gender"> Female
+    <input type="radio" name="gender" class="gender"> Other
+
+    <br><br>
+
+    <!-- Checkbox -->
+    <label>Hobbies</label><br>
+
+    <input type="checkbox" class="hobby"> Reading
+    <input type="checkbox" class="hobby"> Music
+    <input type="checkbox" class="hobby"> Sports
+
+    <br><br>
+
+    <!-- Select -->
+    <label>City</label>
+
+    <select>
+      <option>Ahmedabad</option>
+      <option>Rajkot</option>
+      <option>Surat</option>
+      <option>Vadodara</option>
+    </select>
+
+    <!-- Textarea -->
+    <label>Address</label>
+
+    <textarea rows="4" placeholder="Enter address"></textarea>
+
+    <!-- Reset -->
+    <input type="reset" value="Reset" class="btn">
+
+    <br><br>
+
+    <!-- Submit -->
+    <input type="submit" value="Register" class="btn">
+
+  </form>
+
+</div>
+
+</body>
+</html>
